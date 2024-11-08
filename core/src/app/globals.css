@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+   font-family: "Roboto Flex", sans-serif;
+}
+ a{
+   @apply 	text-[#4c5866] text-xl
+} 
+.container{
+   @apply max-w-[1140px]  mx-auto px-[15px]
+}
+.btn {
+   @apply border border-[#7875FE] 
+}
+.burgerButton{
+   @apply w-[25px] h-[18px] relative
+}
+.burgerButton span{
+   @apply w-full h-[2px] bg-[#4C5866] block rounded-full absolute left-0 duration-300
+}
+span.top{
+   @apply top-0
+}
+.burgerButton.active span.top{
+   transform: rotate(-45deg);
+   top:50%;
+}
+span.middle{
+   @apply top-1/2 mt-[-1px]
+}
+.burgerButton.active span.middle{
+   @apply hidden 
+}
+span.bottom{
+   @apply bottom-0
+}
+.burgerButton.active span.bottom{
+   transform: rotate(45deg);
+   bottom:42%
+}
+.scroll-bar-none::-webkit-scrollbar { 
+   display: none;  
+}
+
+
+
+  
