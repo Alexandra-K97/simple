@@ -12,12 +12,12 @@ const SHEETS = [
     description: "Результат <br/> вашего обучения",
   },
   {
-    image: "/img/sheets two.png",
+    image: "/img/sheets-two.png",
     title: "V.2",
     description: "Результат<br/> вашего обучения",
   },
   {
-    image: "/img/sheets three.png",
+    image: "/img/sheets-three.png",
     title: "V.3",
     description: "Результат<br/> вашего обучения",
   },
@@ -31,7 +31,6 @@ const PRODUCTS = [
       "Сделано из крафт-бумаги или плотного картона. Упаковки имеют различные формы и расцветки, изготовим форму под заказ.",
     link: "#!",
   },
-
   {
     image: "/img/pack.png",
     title: "Пакеты",

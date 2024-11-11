@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import { twMerge } from "tailwind-merge";
 
@@ -30,8 +29,6 @@ const Card: React.FC<Props> = ({ name, price, description,discount }) => {
           плюс
         </button>
       </div>
-
-
     </div>
   );
 };
