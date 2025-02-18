@@ -120,8 +120,10 @@ export default function Home() {
                     <p className="text-[#666666] text-lg font-medium max-dm:text-base max-sm:pt-[32px]">
                       {item.title}
                     </p>
-                    <p dangerouslySetInnerHTML={{__html:item.description}} className="text-[#85859B]  text-lg font-normal max-w-[210px] max-md:text-sm">
-                    </p>
+                    <p
+                      dangerouslySetInnerHTML={{ __html: item.description }}
+                      className="text-[#85859B]  text-lg font-normal max-w-[210px] max-md:text-sm"
+                    ></p>
                   </div>
                 </div>
               ))}
@@ -164,7 +166,10 @@ export default function Home() {
                 <div key={i}>
                   <div className="bg-[#ebebeb] flex items-end justify-center h-[180px]">
                     <Image
-                    className={twMerge("object-contain max-h-[180px] ", i === 1 && "max-h-[170px]")}
+                      className={twMerge(
+                        "object-contain max-h-[180px] ",
+                        i === 1 && "max-h-[170px]"
+                      )}
                       src={item.image}
                       alt="packaging"
                       width={255}
@@ -181,8 +186,15 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="pt-5 flex gap-[5px] items-center max-md:pt-[30px]">
-                    <a className="text-[#7875FE]" href={item.link}>Подробнее</a>
-                    <Image src="/icons/arrow.svg" alt="arrow"  width={20} height={0}/>
+                    <a className="text-[#7875FE]" href={item.link}>
+                      Подробнее
+                    </a>
+                    <Image
+                      src="/icons/arrow.svg"
+                      alt="arrow"
+                      width={20}
+                      height={0}
+                    />
                   </div>
                 </div>
               ))}
